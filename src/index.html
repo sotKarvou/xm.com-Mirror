@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script
       src="https://kit.fontawesome.com/bd2526d014.js"
       crossorigin="anonymous"
@@ -24,8 +31,33 @@
     </nav>
 
     <div class="w-full h-screen bg-slate-400"></div>
+
+    <!-- Event Section -->
+    <section class="w-full h-96 bg-slate-200 p-10">
+      <h2 class="text-center text-3xl font-bold">Event Gallery</h2>
+      <div class="w-full h-full flex flex-row items-center">
+        <button class="h-full w-1/12">
+          <i class="fa-solid fa-chevron-left text-4xl"></i>
+        </button>
+        <div
+          class="w-10/12 h-full grid tablet:grid-cols-4 dektop:grid-cols-5 justify-items-center content-center"
+        >
+          <div class="w-fit h-fit border border-gray-300">
+            <div class="event-card"></div>
+          </div>
+          <div class="event-card"></div>
+          <div class="event-card"></div>
+          <div class="event-card"></div>
+          <div class="event-card"></div>
+        </div>
+        <button class="h-full w-1/12">
+          <i class="fa-solid fa-chevron-right text-4xl"></i>
+        </button>
+      </div>
+    </section>
+
     <!-- BiG Fair Human -->
-    <section class="w-full h-fit">
+    <section class="w-full h-fit flex flex-col items-center desktop:flex-row">
       <div
         class="w-full desktop:w-1/3 flex flex-col desktop:items-start desktop:px-10 desktop:pt-14 desktop:pb-20"
       >
@@ -54,12 +86,47 @@
         </p>
       </div>
 
-      <div></div>
+      <div
+        class="w-full flex flex-col items-center tablet:px-10 tablet:pt-8 tablet:pb-14 desktop:w-2/3 tablet:grid grid-cols-2"
+      >
+        <div class="bigdiv tablet:pr-10 tablet:border-r tablet:border-b">
+          <img class="w-16" src="../images/GroupDollar.png" alt="" />
+          <h3 class="big-human">Authorized and Regulated</h3>
+          <p>
+            At XM, we adhere to all regulatory standards and are fully
+            authorised and regulated by FSC
+          </p>
+        </div>
+        <div class="bigdiv tablet:pl-10 table:border-l tablet:border-b">
+          <img class="w-16" src="../images/FramePeople.png" alt="" />
+          <h3 class="big-human">Authorized and Regulated</h3>
+          <p>
+            At XM, we adhere to all regulatory standards and are fully
+            authorised and regulated by FSC
+          </p>
+        </div>
+        <div class="bigdiv tablet:pr-10 tablet:border-r tablet:border-t">
+          <img class="w-16" src="../images/Framecup.png" alt="" />
+          <h3 class="big-human">Authorized and Regulated</h3>
+          <p>
+            At XM, we adhere to all regulatory standards and are fully
+            authorised and regulated by FSC
+          </p>
+        </div>
+        <div class="bigdiv tablet:pl-10 tablet:border-l tablet:border-t">
+          <img class="w-16" src="../images/7.png" alt="" />
+          <h3 class="big-human">Authorized and Regulated</h3>
+          <p>
+            At XM, we adhere to all regulatory standards and are fully
+            authorised and regulated by FSC
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer
-      class="w-full h-40 p-1 bg-black desktop:h-60 tablet:p-10 flex flex-col justify-center"
+      class="w-full h-40 bg-black desktop:h-60 tablet:p-10 flex flex-col justify-center"
     >
       <div class="collapse desktop:visible flex flex-row">
         <span class="w-4/5 flex flex-row justify-start object-scale-down">
@@ -82,11 +149,6 @@
         </span>
         <div class="w-1/5 flex flex-row justify-end items-center text-white">
           <p class="text-white mr-1">Follow us On</p>
-          <!-- <div class="w-6 h-6 m-1 border-2 border-white"></div>
-          <div class="w-6 h-6 m-1 border-2 border-white"></div>
-          <div class="w-6 h-6 m-1 border-2 border-white"></div>
-          <div class="w-6 h-6 m-1 border-2 border-white"></div>
-          <div class="w-6 h-6 m-1 border-2 border-white"></div> -->
           <i class="fa-brands fa-facebook-f m-1"></i>
           <i class="fa-brands fa-twitter m-1"></i>
           <i class="fa-brands fa-youtube m-1"></i>
