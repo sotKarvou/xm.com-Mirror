@@ -12,6 +12,6 @@
 }
 
 .event-card{
-    @apply w-40 h-40 bg-gray-300 border-solid border-4 border-white;
+    @apply w-24 h-24 tablet:w-32 tablet:h-32 desktop:w-40 desktop:h-40 bg-gray-300 border-solid border-4 border-white;
 }
 
