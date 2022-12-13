@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script
       src="https://kit.fontawesome.com/bd2526d014.js"
@@ -21,7 +19,7 @@
   <body>
     <!-- Nav Bar -->
     <nav
-      class="w-full h-36 bg-black flex flex-row items-center justify-center desktop:justify-between"
+      class="w-full h-28 bg-black flex flex-row items-center justify-center desktop:justify-between"
     >
       <img src="../images/xm-icon.png" alt="XM Badge" class="m-2" />
       <span class="collapse desktop:visible flex flex-row">
@@ -29,23 +27,56 @@
         <p class="text-white m-1 pr-4">Support</p>
       </span>
     </nav>
-
-    <div class="w-full h-screen bg-slate-900">
-      <img class="w-32 h-32 object-scale-down relative -top-5 opacity-40 -z-1" src="../images/Gold Number-angle 2greenO.png" alt="">
-      <img class="w-28 h-28 opacity-50 relative left-[250px] -top-[100px] -z-1" src="../images/Cube glass 2cube.png" alt="">
+    <!-- Hero Section -->
+    <section
+      class="w-full h-fit bg-slate-900 flex flex-col justify-center items-center"
+    >
+      <!-- Backround images -->
+      <!-- <img class="w-32 h-32 object-scale-down relative -top-5 opacity-40 -z-1" src="../images/Gold Number-angle 2greenO.png" alt="">
+      <img class="w-28 h-28 opacity-50 relative right-[250px] -top-[100px] -z-1" src="../images/Cube glass 2cube.png" alt="">
       <img class="w-36 h-36 opacity-50 relative left-[240px] top-[200px] -z-1" src="../images/Gold Number 0.N10 1pink.png" alt="">
       <img class="w-96 h-96 relative -left-[150px] top-[600px] -z-2" src="../images/Gold-Number-02 1bleredO.png" alt="">
       <img class="hidden -z-1" src="../images/Cup glass 1tablet.png" alt="">
-      <img class="hidden -z-1" src="../images/Cube glass 3bleredCube.png" alt="">
+      <img class="hidden -z-1" src="../images/Cube glass 3bleredCube.png" alt=""> -->
+      <div class="pt-20 px-2">
+        <h3 class="text-white text-center">TRADE WITH</h3>
+        <h1 class="text-white text-center text-2xl py-6">
+          <b>Zero Swap</b> on All <br />
+          XM Ultra Low <br />
+          Accounts for more <br />
+          than 25 instruments!
+        </h1>
+        <p class="text-white text-center text-base px-10 pb-8">
+          Enjoy spreads <b>as low as 0.6 pips and levarage up to 1000:1</b> on
+          instruments like <b>EURUSD, EURJPY, GBPUSD,</b> and <b>Gold.</b>
+        </p>
+      </div>
+      <button class="w-11/12 h-10 bg-green-600">
+        <h2 class="text-white font-semibold text-lg font-flaja">OPEN ACCOUNT</h2>
+      </button>
+      <div class="flex flex-row text-[0.85rem] text-white py-3">
+        <p>New to trading? Try a &nbsp</p>
+        <span> </span>
+        <a href="#"
+          ><p><u>Demo account.</u></p></a
+        >
+      </div>
+      <div class="text-xs text-white py-3 px-5 text-center pb-20">
+        <p>
+          Terms and Conditions apply<span class="text-red-600">*</span>. To read
+          the full T&Cs,
+          <a href="#" class="text-red-600">click here.</a>
+        </p>
+      </div>
+    </section>
 
-
-      <h1 class="text-white text-center text-3xl "><b>Zero Swap</b> on All XM Ultra Low Accounts for more than 25 instruments!</h1>
+    <section>
       
-    </div>
+    </section>
 
     <!-- Event Section -->
     <section class="w-full h-64 tablet:h-72 bg-slate-200 p-2 tablet:p-8">
-      <h2 class=" h-1/6 text-center text-3xl font-bold">Event Gallery</h2>
+      <h2 class="h-1/6 text-center text-3xl font-bold">Event Gallery</h2>
       <div class="w-full h-5/6 flex flex-row items-center justify-center">
         <button class="h-full">
           <i class="fa-solid fa-chevron-left text-base desktop:text-4xl"></i>
@@ -59,19 +90,13 @@
           <div class="w-fit h-fit border border-gray-300">
             <div class="event-card">2</div>
           </div>
-          <div
-            class="w-fit h-fit border border-gray-300 hidden tablet:block"
-          >
+          <div class="w-fit h-fit border border-gray-300 hidden tablet:block">
             <div class="event-card">3</div>
           </div>
-          <div
-            class="w-fit h-fit border border-gray-300 hidden tablet:block"
-          >
+          <div class="w-fit h-fit border border-gray-300 hidden tablet:block">
             <div class="event-card">4</div>
           </div>
-          <div
-            class="w-fit h-fit border border-gray-300 hidden desktop:block"
-          >
+          <div class="w-fit h-fit border border-gray-300 hidden desktop:block">
             <div class="event-card">5</div>
           </div>
         </div>
