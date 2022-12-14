@@ -26,3 +26,7 @@
 .tcr-section{
     @apply grid grid-cols-3 grid-flow-row
 }
+
+.perc-card{
+    @apply w-10/12 h-56 bg-emerald-400 my-2 rounded-lg flex flex-col justify-center space-y-3 px-5
+}
