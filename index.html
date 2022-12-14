@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bd2526d014.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>XM.com</title>
+  </head>
+  <body>
+    <header
+      class="w-full h-28 bg-black flex flex-row items-center justify-center desktop:justify-between"
+    >
+      <img src="../images/xm-icon.png" alt="XM Badge" class="m-2" />
+      <span class="collapse desktop:visible flex flex-row">
+        <p class="text-white m-1">XM Homepage</p>
+        <p class="text-white m-1 pr-4">Support</p>
+      </span>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="w-full h-fit bg-slate-900 flex flex-col justify-center items-center"
+    >
+      <!-- Backround images
+      <img
+        class="w-32 h-32 object-scale-down relative -top-5 opacity-40 -z-1"
+        src="../images/Gold Number-angle 2greenO.png"
+        alt=""
+      />
+      <img
+        class="w-28 h-28 opacity-50 relative right-[250px] -top-[100px] -z-1"
+        src="../images/Cube glass 2cube.png"
+        alt=""
+      />
+      <img
+        class="w-36 h-36 opacity-50 relative left-[240px] top-[200px] -z-1"
+        src="../images/Gold Number 0.N10 1pink.png"
+        alt=""
+      />
+      <img
+        class="w-96 h-96 relative -left-[150px] top-[600px] -z-2"
+        src="../images/Gold-Number-02 1bleredO.png"
+        alt=""
+      />
+      <img class="hidden -z-1" src="../images/Cup glass 1tablet.png" alt="" />
+      <img
+        class="hidden -z-1"
+        src="../images/Cube glass 3bleredCube.png"
+        alt=""
+      /> -->
+      <div class="pt-20">
+        <h3 class="text-white text-center">TRADE WITH</h3>
+        <h1 class="text-white text-center text-2xl py-6 px-5">
+          <b>Zero Swap</b> on All XM Ultra Low Accounts for more than 25
+          instruments!
+        </h1>
+        <p
+          class="text-white text-center text-base px-10 pb-8 tablet:text-slate-500"
+        >
+          Enjoy spreads <b>as low as 0.6 pips and levarage up to 1000:1</b> on
+          instruments like <b>EURUSD, EURJPY, GBPUSD,</b> and <b>Gold.</b>
+        </p>
+      </div>
+      <button class="w-11/12 h-10 bg-green-600 tablet:w-2/5">
+        <h2 class="text-white font-semibold text-lg font-flaja">
+          OPEN ACCOUNT
+        </h2>
+      </button>
+      <div class="flex flex-row text-[0.85rem] text-white py-3">
+        <p>New to trading? Try a &nbsp</p>
+        <span> </span>
+        <a href="#"
+          ><p><u>Demo account.</u></p></a
+        >
+      </div>
+      <div class="text-xs text-white py-3 px-5 text-center pb-20">
+        <p>
+          Terms and Conditions apply<span class="text-red-600">*</span>. To read
+          the full T&Cs,
+          <a href="#" class="text-red-600">click here.</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Crypto Currency Cards -->
+    <section
+      class="w-full h-fit bg-slate-900 flex flex-col justify-center items-center desktop:flex-row desktop:pt-10 desktop:space-x-4"
+    >
+      <div
+        class="flex flex-col py-4 space-y-4 tablet:flex-row tablet:space-x-4 tablet:space-y-0"
+      >
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Bitcoin.png"
+              alt=""
+            />
+            <h3 id="bitcoin-symbol" class="text-slate-200"></h3>
+            <h5
+              id="bitcoin-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="bitcoin-price" class="text-slate-200"></h2>
+            <h3 id="bitcoin-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Etherium.png"
+              alt=""
+            />
+            <h3 id="ethereum-symbol" class="text-slate-200"></h3>
+            <h5
+              id="ethereum-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="ethereum-price" class="text-slate-200"></h2>
+            <h3 id="ethereum-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Ripple.png"
+              alt=""
+            />
+            <h3 id="ripple-symbol" class="text-slate-200"></h3>
+            <h5
+              id="ripple-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="ripple-price" class="text-slate-200"></h2>
+            <h3 id="ripple-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-fit h-fit flex flex-col py-0 space-y-4 tablet:flex-row tablet:space-x-4 tablet:space-y-0 tablet:py-4"
+      >
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Litecoin.png"
+              alt=""
+            />
+            <h3 id="litecoin-symbol" class="text-slate-200"></h3>
+            <h5
+              id="litecoin-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="litecoin-price" class="text-slate-200"></h2>
+            <h3 id="litecoin-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Bitcoin-cash .png"
+              alt=""
+            />
+            <h3 id="bitcoin-cash-symbol" class="text-slate-200"></h3>
+            <h5
+              id="bitcoin-cash-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="bitcoin-cash-price" class="text-slate-200"></h2>
+            <h3 id="bitcoin-cash-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full h-fit bg-slate-900">
+      <h2 class="text-white text-xl">Why <b>Trade</b> with XM?</h2>
+      <hr
+        class="my-8 w-64 h-10 bg-green-800 border-0 dark:bg-green-700"
+      />
+      <p class="text-white text-sm">
+        We havr been providing traders around the world with the same
+        <b>premium experience</b> for over a dacade. As an
+        <b>industry-leader</b>, we know what the modern trader needs to be
+        <b>successful</b> in the market
+      </p>
+    </section>
+  </body>
+  <script src="./src/app.js"></script>
+</html>

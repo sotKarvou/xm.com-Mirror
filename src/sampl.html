@@ -1,6 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/bd2526d014.js"
+    crossorigin="anonymous"
+  ></script>
+  <title>XM.com</title>
+  <body>
+    <div
+      class="w-full h-28 bg-blue-500 flex flex-row items-center justify-center desktop:justify-between"
+    >
+      <!-- <img src="../images/xm-icon.png" alt="XM Badge" class="m-2" />
+          <span class="collapse desktop:visible flex flex-row">
+            <p class="text-white m-1">XM Homepage</p>
+            <p class="text-white m-1 pr-4">Support</p>
+          </span> -->
+        </div>
+  </body>
+</head>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="gr">
+  <!-- <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,15 +43,14 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
-
     <script
       src="https://kit.fontawesome.com/bd2526d014.js"
       crossorigin="anonymous"
     ></script>
     <title>XM.com</title>
-  </head>
-  <body>
-    <!-- Nav Bar -->
+  </head> -->
+  <!-- <body>
+    Nav Bar
     <header
       class="w-full h-28 bg-black flex flex-row items-center justify-center desktop:justify-between"
     >
@@ -29,17 +60,17 @@
         <p class="text-white m-1 pr-4">Support</p>
       </span>
     </header>
-    <!-- Hero Section -->
+    Hero Section
     <section
       class="w-full h-fit bg-slate-900 flex flex-col justify-center items-center"
     >
-      <!-- Backround images -->
-      <!-- <img class="w-32 h-32 object-scale-down relative -top-5 opacity-40 -z-1" src="../images/Gold Number-angle 2greenO.png" alt="">
+      Backround images
+      <img class="w-32 h-32 object-scale-down relative -top-5 opacity-40 -z-1" src="../images/Gold Number-angle 2greenO.png" alt="">
       <img class="w-28 h-28 opacity-50 relative right-[250px] -top-[100px] -z-1" src="../images/Cube glass 2cube.png" alt="">
       <img class="w-36 h-36 opacity-50 relative left-[240px] top-[200px] -z-1" src="../images/Gold Number 0.N10 1pink.png" alt="">
       <img class="w-96 h-96 relative -left-[150px] top-[600px] -z-2" src="../images/Gold-Number-02 1bleredO.png" alt="">
       <img class="hidden -z-1" src="../images/Cup glass 1tablet.png" alt="">
-      <img class="hidden -z-1" src="../images/Cube glass 3bleredCube.png" alt=""> -->
+      <img class="hidden -z-1" src="../images/Cube glass 3bleredCube.png" alt="">
       <div class="pt-20 px-2">
         <h3 class="text-white text-center">TRADE WITH</h3>
         <h1 class="text-white text-center text-2xl py-6">
@@ -53,7 +84,7 @@
           instruments like <b>EURUSD, EURJPY, GBPUSD,</b> and <b>Gold.</b>
         </p>
       </div>
-      <button class="w-11/12 h-10 bg-green-600">
+      <button id="open-acc" class="w-11/12 h-10 bg-green-600">
         <h2 class="text-white font-semibold text-lg font-flaja">
           OPEN ACCOUNT
         </h2>
@@ -74,82 +105,115 @@
       </div>
     </section>
 
-    <!-- Crypto Currency Cards -->
+    Crypto Currency Cards
     <section
-      class="w-full h-fit bg-slate-900 flex flex-col justify-center items-center tablet:grid tablet:grid-cols-3 tablet:auto-flow-row tablet:gap-4"
+      class="w-full h-fit bg-slate-900 flex flex-col justify-center items-center desktop:flex-row desktop:pt-10 desktop:space-x-4"
     >
-      <div class="crypto-card">
-        <div class="flex flex-row items-center justify-start pb-4 space-x-3">
-          <img class="w-10 h-10 shadow-md" src="../images/Bitcoin.png" alt="" />
-          <h3 class="text-slate-200">BTC</h3>
-          <h5 class="bg-slate-200 rounded-lg py-1 px-2">Bitcoin</h5>
+      <div class="flex flex-col py-4 space-y-4 tablet:flex-row tablet:space-x-4 tablet:space-y-0"
+      >
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Bitcoin.png"
+              alt=""
+            />
+            <h3 id="bitcoin-symbol" class="text-slate-200"></h3>
+            <h5
+              id="bitcoin-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 desktop:text-sm"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="bitcoin-price" class="text-slate-200"></h2>
+            <h3 id="bitcoin-tra" class="text-emerald-300"></h3>
+          </div>
         </div>
-        <hr class="w-full self-center opacity-50" />
-        <div class="py-5">
-          <h2 class="text-slate-200">Dollars</h2>
-          <h3 class="text-emerald-300">pesrentage</h3>
+
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Etherium.png"
+              alt=""
+            />
+            <h3 id="ethereum-symbol" class="text-slate-200"></h3>
+            <h5
+              id="ethereum-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 desktop:text-sm"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="ethereum-price" class="text-slate-200"></h2>
+            <h3 id="ethereum-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Ripple.png"
+              alt=""
+            />
+            <h3 id="ripple-symbol"class="text-slate-200">BTC</h3>
+            <h5 id="ripple-name" class="bg-slate-200 rounded-lg py-1 px-2 desktop:text-sm">
+              Bitcoin
+            </h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="ripple-price" class="text-slate-200">Dollars</h2>
+            <h3 id="ripple-tra" class="text-emerald-300">pesrentage</h3>
+          </div>
         </div>
       </div>
 
-
-      <div class="crypto-card">
-        <div class="flex flex-row items-center justify-start pb-4 space-x-3">
-          <img class="w-10 h-10 shadow-md" src="../images/Bitcoin.png" alt="" />
-          <h3 class="text-slate-200">BTC</h3>
-          <h5 class="bg-slate-200 rounded-lg py-1 px-2">Bitcoin</h5>
+      <div class="w-fit h-fit flex flex-col py-0 space-y-4 tablet:flex-row tablet:space-x-4 tablet:space-y-0 tablet:py-4"
+      >
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Litecoin.png"
+              alt=""
+            />
+            <h3 id="litecoin-symbol" class="text-slate-200"></h3>
+            <h5 id="litecoin-name" class="bg-slate-200 rounded-lg py-1 px-2 desktop:text-sm">
+              
+            </h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="litecoin-price" class="text-slate-200"></h2>
+            <h3 id="litecoin-tra" class="text-emerald-300"></h3>
+          </div>
         </div>
 
-        <hr class="w-full self-center opacity-50" />
-        <div class="py-5">
-          <h2 class="text-slate-200">Dollars</h2>
-          <h3 class="text-emerald-300">pesrentage</h3>
-        </div>
-      </div>
-
-
-      <div class="crypto-card">
-        <div class="flex flex-row items-center justify-start pb-4 space-x-3">
-          <img class="w-10 h-10 shadow-md" src="../images/Bitcoin.png" alt="" />
-          <h3 class="text-slate-200">BTC</h3>
-          <h5 class="bg-slate-200 rounded-lg py-1 px-2">Bitcoin</h5>
-        </div>
-
-        <hr class="w-full self-center opacity-50" />
-        <div class="py-5">
-          <h2 class="text-slate-200">Dollars</h2>
-          <h3 class="text-emerald-300">pesrentage</h3>
-        </div>
-      </div>
-
-
-      <div class="crypto-card">
-        <div class="flex flex-row items-center justify-start pb-4 space-x-3">
-          <img class="w-10 h-10 shadow-md" src="../images/Bitcoin.png" alt="" />
-          <h3 class="text-slate-200">BTC</h3>
-          <h5 class="bg-slate-200 rounded-lg py-1 px-2">Bitcoin</h5>
-        </div>
-        <hr class="w-full self-center opacity-50" />
-        <div class="py-5">
-          <h2 class="text-slate-200">Dollars</h2>
-          <h3 class="text-emerald-300">pesrentage</h3>
-        </div>
-      </div>
-
-      <div class="crypto-card">
-        <div class="flex flex-row items-center justify-start pb-4 space-x-3">
-          <img class="w-10 h-10 shadow-md" src="../images/Bitcoin.png" alt="" />
-          <h3 class="text-slate-200">BTC</h3>
-          <h5 class="bg-slate-200 rounded-lg py-1 px-2">Bitcoin</h5>
-        </div>
-        <hr class="w-full self-center opacity-50" />
-        <div class="py-5">
-          <h2 class="text-slate-200">Dollars</h2>
-          <h3 class="text-emerald-300">pesrentage</h3>
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Bitcoin-cash .png"
+              alt=""
+            />
+            <h3 id="bitcoin-cash-symbol" class="text-slate-200"></h3>
+            <h5 id="bitcoin-cash-name" class="bg-slate-200 rounded-lg py-1 px-2 desktop:text-sm">
+              
+            </h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="bitcoin-cash-price" class="text-slate-200">Dollars</h2>
+            <h3 id="bitcoin-cash-tra" class="text-emerald-300">pesrentage</h3>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Event Section -->
+    Event Section
     <section class="w-full h-64 tablet:h-72 bg-slate-200 p-2 tablet:p-8">
       <h2 class="h-1/6 text-center text-3xl font-bold">Event Gallery</h2>
       <div class="w-full h-5/6 flex flex-row items-center justify-center">
@@ -181,7 +245,7 @@
       </div>
     </section>
 
-    <!-- BiG Fair Human -->
+    BiG Fair Human
     <section class="w-full h-fit flex flex-col items-center desktop:flex-row">
       <div
         class="w-full desktop:w-1/3 flex flex-col desktop:items-start desktop:px-10 desktop:pt-14 desktop:pb-20"
@@ -249,26 +313,26 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    Footer
     <footer
       class="w-full h-40 bg-black desktop:h-60 tablet:p-10 flex flex-col justify-center"
     >
       <div class="collapse desktop:visible flex flex-row">
         <span class="w-4/5 flex flex-row justify-start object-scale-down">
-          <img class="pr-5 py-6 w-40" src="../images/MegaQuotes.png" alt="" />
+          <img class="pr-5 py-6 w-40" src="./images/MegaQuotes.png" alt="" />
           <img
             class="px-5 py-6 w-44"
-            src="../images/RectangleVerisign.png"
+            src="./images/RectangleVerisign.png"
             alt=""
           />
           <img
             class="px-5 py-6 w-40"
-            src="../images/RectangleUnicef.png"
+            src="./images/RectangleUnicef.png"
             alt=""
           />
           <img
             class="px-5 py-6 w-52"
-            src="../images/RectangleInvestors.png"
+            src="./images/RectangleInvestors.png"
             alt=""
           />
         </span>
@@ -296,10 +360,28 @@
         </span>
         <img
           class="object-scale-down w-40 tablet:mr-9 desktop:mt-4"
-          src="../images/Rectangle.png"
+          src="./images/Rectangle.png"
           alt="Trading Point Image"
         />
       </div>
     </footer>
-  </body>
+  </body> -->
+
+  <!-- <head>
+
+  </head>
+  <body>
+    <header
+      class="w-full h-28 bg-blue-500k flex flex-row items-center justify-center desktop:justify-between"
+    >
+      <img src="../images/xm-icon.png" alt="XM Badge" class="m-2" />
+      <span class="collapse desktop:visible flex flex-row">
+        <p class="text-white m-1">XM Homepage</p>
+        <p class="text-white m-1 pr-4">Support</p>
+      </span>
+    </header>
+  </body> -->
+
+  <!-- <script src="./src/app.js"></script> -->
 </html>
+-->
