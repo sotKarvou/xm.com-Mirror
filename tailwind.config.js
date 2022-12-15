@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       screens: {
@@ -8,7 +8,10 @@ module.exports = {
         tablet: "768px",
         desktop: "1200px",
       },
+      fontFamily:{
+        flaja: "'Fjalla One', sans-serif",
+      }
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bd2526d014.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>XM.com</title>
+  </head>
+  <body>
+    <header
+      class="w-full h-28 bg-black flex flex-row items-center justify-center desktop:justify-between"
+    >
+      <img src="../images/xm-icon.png" alt="XM Badge" class="m-2" />
+      <span class="collapse desktop:visible flex flex-row">
+        <p class="text-white m-1">XM Homepage</p>
+        <p class="text-white m-1 pr-4">Support</p>
+      </span>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="w-full h-fit bg-slate-900 flex flex-col justify-center items-center"
+    >
+      <!-- Backround images
+      <img
+        class="w-32 h-32 object-scale-down relative -top-5 opacity-40 -z-1"
+        src="../images/Gold Number-angle 2greenO.png"
+        alt=""
+      />
+      <img
+        class="w-28 h-28 opacity-50 relative right-[250px] -top-[100px] -z-1"
+        src="../images/Cube glass 2cube.png"
+        alt=""
+      />
+      <img
+        class="w-36 h-36 opacity-50 relative left-[240px] top-[200px] -z-1"
+        src="../images/Gold Number 0.N10 1pink.png"
+        alt=""
+      />
+      <img
+        class="w-96 h-96 relative -left-[150px] top-[600px] -z-2"
+        src="../images/Gold-Number-02 1bleredO.png"
+        alt=""
+      />
+      <img class="hidden -z-1" src="../images/Cup glass 1tablet.png" alt="" />
+      <img
+        class="hidden -z-1"
+        src="../images/Cube glass 3bleredCube.png"
+        alt=""
+      /> -->
+      <div class="pt-20 desktop:max-w-lg">
+        <h3 class="text-white text-center">TRADE WITH</h3>
+        <h1 class="text-white text-center text-2xl py-6 px-5">
+          <b>Zero Swap</b> on All XM Ultra Low Accounts for more than 25
+          instruments!
+        </h1>
+        <p class="text-white text-center text-base px-10 pb-8">
+          Enjoy spreads <b>as low as 0.6 pips and levarage up to 1000:1</b> on
+          instruments like <b>EURUSD, EURJPY, GBPUSD,</b> and <b>Gold.</b>
+        </p>
+      </div>
+      <button class="w-11/12 h-10 bg-green-600 tablet:w-56 desktop:w-1/3">
+        <h2 class="text-white font-semibold text-lg font-flaja">
+          OPEN ACCOUNT
+        </h2>
+      </button>
+      <div class="flex flex-row text-[0.85rem] text-white py-3">
+        <p>New to trading? Try a &nbsp</p>
+        <span> </span>
+        <a href="#"
+          ><p><u>Demo account.</u></p></a
+        >
+      </div>
+      <div class="text-xs text-white py-3 px-5 text-center pb-20">
+        <p>
+          Terms and Conditions apply<span class="text-red-600">*</span>. To read
+          the full T&Cs,
+          <a href="#" class="text-red-600">click here.</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Crypto Currency Cards -->
+    <section
+      class="w-full h-fit bg-slate-900 flex flex-col justify-center items-center desktop:flex-row desktop:pt-10 desktop:space-x-4"
+    >
+      <div
+        class="flex flex-col py-4 space-y-4 tablet:flex-row tablet:space-x-4 tablet:space-y-0"
+      >
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Bitcoin.png"
+              alt=""
+            />
+            <h3 id="bitcoin-symbol" class="text-slate-200"></h3>
+            <h5
+              id="bitcoin-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="bitcoin-price" class="text-slate-200"></h2>
+            <h3 id="bitcoin-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Etherium.png"
+              alt=""
+            />
+            <h3 id="ethereum-symbol" class="text-slate-200"></h3>
+            <h5
+              id="ethereum-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="ethereum-price" class="text-slate-200"></h2>
+            <h3 id="ethereum-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Ripple.png"
+              alt=""
+            />
+            <h3 id="ripple-symbol" class="text-slate-200"></h3>
+            <h5
+              id="ripple-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="ripple-price" class="text-slate-200"></h2>
+            <h3 id="ripple-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-fit h-fit flex flex-col py-0 space-y-4 tablet:flex-row tablet:space-x-4 tablet:space-y-0 tablet:py-4"
+      >
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Litecoin.png"
+              alt=""
+            />
+            <h3 id="litecoin-symbol" class="text-slate-200"></h3>
+            <h5
+              id="litecoin-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="litecoin-price" class="text-slate-200"></h2>
+            <h3 id="litecoin-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+
+        <div class="crypto-card">
+          <div class="flex flex-row items-center justify-start pb-4 space-x-3">
+            <img
+              class="w-10 h-10 desktop:w-8 desktop:h-8"
+              src="./images/Bitcoin-cash .png"
+              alt=""
+            />
+            <h3 id="bitcoin-cash-symbol" class="text-slate-200"></h3>
+            <h5
+              id="bitcoin-cash-name"
+              class="bg-slate-200 rounded-lg py-1 px-2 text-xs"
+            ></h5>
+          </div>
+          <hr class="w-full self-center opacity-50" />
+          <div class="py-5 desktop:p-2">
+            <h2 id="bitcoin-cash-price" class="text-slate-200"></h2>
+            <h3 id="bitcoin-cash-tra" class="text-emerald-300"></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Percs Section -->
+    <section
+      class="w-full h-fit py-16 bg-gradient-to-b from-slate-900 to-[#392f42] flex flex-col items-center"
+    >
+      <h2 class="text-white text-xl">Why <b>Trade</b> with XM?</h2>
+      <hr
+        class="my-8 w-36 h-[0.1rem] bg-green-800 border-0 dark:bg-green-700"
+      />
+      <p
+        class="text-white text-sm text-center px-6 pb-10 tablet:max-w-3xl tablet:px-8"
+      >
+        We have been providing traders around the world with the same
+        <b>premium experience</b> for over a dacade. As an
+        <b>industry-leader</b>, we know what the modern trader needs to be
+        <b>successful</b> in the market
+      </p>
+
+      <div
+        class="w-full h-fit grid grid-cols-1 justify-items-center desktop:grid-cols-3 desktop:px-28 desktop:gap-6"
+      >
+        <div
+          class="perc-card desktop:row-start-1 desktop:row-end-3 desktop:h-auto"
+        >
+          <div class="flex flex-row space-x-4 justify-between">
+            <h2>Superior Trade Execution</h2>
+            <img
+              class="object-scale-down w-10"
+              src="./images/perc-cards/fast-execusion-iconfast.png"
+              alt="Fast Excecution"
+            />
+          </div>
+          <hr class="w-16 h-[0.1rem] bg-green-800 border-0" />
+          <p>
+            <b>99%</b> of trades are executed in <b>less than a second,</b> with
+            no requotes or rejections
+          </p>
+        </div>
+        <div
+          class="perc-card desktop:col-start-2 desktop:col-end-4 desktop:w-full transition-all"
+        >
+          <div class="flex flex-row space-x-4 justify-between">
+            <h2>Competitive Pricing</h2>
+            <img
+              class="object-scale-down w-10"
+              src="./images/perc-cards/competitive-pricing-iconprice.png"
+              alt="Competitive Pricing"
+            />
+          </div>
+          <hr class="w-16 h-[0.1rem] bg-green-800 border-0" />
+          <p>
+            We offer some of the <b>lowest spreads</b> and we don't charge
+            commissions
+          </p>
+        </div>
+        <div class="perc-card">
+          <div class="flex flex-row space-x-4 justify-between">
+            <h2>Advanced Technology</h2>
+            <img
+              class="object-scale-down w-10"
+              src="./images/perc-cards/tech-icontech.png"
+              alt="Tech Icon"
+            />
+          </div>
+          <hr class="w-16 h-[0.1rem] bg-green-800 border-0" />
+          <p>
+            Trade on <b>MT4</b> or <b>MT5,</b> with expert tools, across
+            desktop, web and mobile.
+          </p>
+        </div>
+        <div class="perc-card">
+          <div class="flex flex-row space-x-4 justify-between">
+            <h2>Start with $5</h2>
+            <img
+              class="object-scale-down w-10"
+              src="./images/perc-cards/dollar-icon$.png"
+              alt="Dollar Icon"
+            />
+          </div>
+          <hr class="w-16 h-[0.1rem] bg-green-800 border-0" />
+          <p>
+            Start trading your prefered instuments with as littli as a
+            <b>$5 minimum deposit.</b>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Register Section -->
+    <section
+      class="bg-gradient-to-b from-[#392f42] to-slate-900 p-5 flex flex-col items-center"
+    >
+      <div
+        class="flex flex-col items-center text-center justify-center text-white space-y-5 pb-5 tablet:max-w-lg"
+      >
+        <h2><b>- Register Here -</b></h2>
+        <p>Join us to celebrate our biggest night of the year.</p>
+      </div>
+      <div
+        class="flex flex-col items-center text-center justify-center text-white space-y-5 tablet:max-w-lg tablet:grid tablet:grid-cols-3 tablet:w-4/5 tablet:space-y-0 desktop:w-3/5"
+      >
+        <div
+          class="space-y-2 tablet:w-full tablet:h-full tablet:border tablet:border-white tablet:border-l-0 p-4"
+        >
+          <i class="fa-regular fa-calendar-check text-lg"></i>
+          <h3>05 NOVEMBER 2022</h3>
+        </div>
+        <hr class="w-full h-[0.1rem] bg-white border-0 tablet:hidden" />
+        <div
+          class="space-y-2 tablet:w-full tablet:h-full tablet:border-y tablet:border-white tablet:border-l-0 p-4"
+        >
+          <i class="fa-regular fa-clock"></i>
+          <h3>16:00 - 23:00</h3>
+        </div>
+        <hr class="w-full h-[0.1rem] bg-white border-0 tablet:hidden" />
+        <div
+          class="space-y-2 tablet:w-full tablet:h-full tablet:border tablet:border-white tablet:border-r-0 py-4"
+        >
+          <i class="fa-solid fa-location-dot text-2xl"></i>
+          <h3 class="tablet:text-sm">
+            CENTARA GRAND & BANGKOK <br />
+            CONVETION CENTRE, BANGKOK
+          </h3>
+        </div>
+      </div>
+      <form
+        action=""
+        class="py-20 w-11/12 flex flex-col items-start space-y-3 tablet:max-w-lg desktop:grid desktop:grid-cols-2 desktop:max-w-4xl desktop:space-y-0 desktop:gap-3"
+      >
+        <div class="w-full flex flex-col space-y-1">
+          <label class="font-bold text-white" for="mail">Email:</label>
+          <input
+            id="mail"
+            type="email"
+            class="h-10 rounded-md border-2"
+            oninput="return validateEmail()"
+          />
+          <div id="mail-validator" class="hidden flex-row items-center text-xs tablet:text-sm text-red-500 pt-2">
+            <i class="fa-solid fa-circle-dot text-xs"></i>
+            <p>Please Enter Valid Email</p>
+          </div>
+        </div>
+        <div class="w-full flex flex-col space-y-1">
+          <label class="font-bold text-white" for="password">Password:</label>
+          <input
+            id="password"
+            class="h-10 rounded-md"
+            type="password"
+            onfocus="initializeValidation(this)"
+            onkeyup="validatePassword(this)"
+          />
+          <ul class="py-3 space-y-1 text-xs">
+            <li id="length" class="flex flex-row text-white">
+              <i class="fa-solid fa-circle-dot text-xs opacity-70"></i>
+              <p>&nbsp 8 - 15 characters</p>
+            </li>
+            <li id="numbers" class="flex flex-row text-white">
+              <i class="fa-solid fa-circle-dot text-xs"></i>
+              <p>&nbsp 1 or more numbers</p>
+            </li>
+            <li id="lowercase" class="flex flex-row text-white">
+              <i class="fa-solid fa-circle-dot text-xs"></i>
+              <p>&nbsp 1 or more lower case letters</p>
+            </li>
+            <li id="uppercase" class="flex flex-row text-white">
+              <i class="fa-solid fa-circle-dot text-xs"></i>
+              <p>&nbsp 1 or more upper case letters</p>
+            </li>
+            <li id="special" class="flex flex-row text-white">
+              <i class="fa-solid fa-circle-dot text-xs"></i>
+              <p>&nbsp 1 or more spesial characters (#[]()@$&*!?,.^/\+_-)</p>
+            </li>
+          </ul>
+        </div>
+        <div id="congrats" class="hidden max-w-4xl h-44 bg-yellow-50 desktop:col-span-2 flex-col justify-center p-2 tablet:space-y-2 tablet:p-4 desktop:space-y-4">
+          <div class="flex flex-row text-green-500 text-lg space-x-2 tablet:text-2xl desktop:text-4xl" >
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>Registration Successful</h2>
+          </div>
+          <div class="flex flex-row space-x-1 text-green-500 text-xs tablet:text-sm">
+            <i class="fa-solid fa-caret-right"></i>
+            <p>
+              Thank you for registering for our event with XM. You will recieve
+              an email shortly withnconfirmation of your registration
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col desktop:col-span-2 desktop:max-w-lg desktop:justify-self-center"
+        >
+          <button
+            id="submit"
+            class="w-full h-10 bg-gr text-lg text-white font-bold font-flaja my-8 bg-slate-400 cursor-not-allowed"
+            onclick="Submit(event)"
+            disabled
+          >
+            REGISTER NOW
+          </button>
+        </div>
+        <div
+          class="w-full text-sm text-white space-y-2 desktop:col-span-2 desktop:max-w-lg desktop:justify-self-center items-center"
+        >
+          <p>
+            Don't have an account?
+            <a href="" class="text-red-500"><u>Create one here</u></a>
+          </p>
+          <p>
+            Terms and Conditions apply<span class="text-red-600">*</span>. To
+            read the full T&Cs,
+            <a href="#" class="text-red-600">click here.</a>
+          </p>
+        </div>
+      </form>
+    </section>
+
+    <!-- Event Section -->
+    <section class="w-full h-64 tablet:h-72 bg-slate-200 p-2 tablet:p-8">
+      <h2 class="h-1/6 text-center text-3xl font-bold">Event Gallery</h2>
+      <div class="w-full h-5/6 flex flex-row items-center justify-center">
+        <button class="h-full">
+          <i class="fa-solid fa-chevron-left text-base desktop:text-4xl"></i>
+        </button>
+        <div
+          class="w-10/12 h-full grid grid-cols-2 tablet:grid-cols-4 desktop:grid-cols-5 justify-items-center content-center"
+        >
+          <div class="w-fit h-fit border border-gray-300">
+            <div class="event-card"></div>
+          </div>
+          <div class="w-fit h-fit border border-gray-300">
+            <div class="event-card"></div>
+          </div>
+          <div class="w-fit h-fit border border-gray-300 hidden tablet:block">
+            <div class="event-card"></div>
+          </div>
+          <div class="w-fit h-fit border border-gray-300 hidden tablet:block">
+            <div class="event-card"></div>
+          </div>
+          <div class="w-fit h-fit border border-gray-300 hidden desktop:block">
+            <div class="event-card"></div>
+          </div>
+        </div>
+        <button class="h-full">
+          <i class="fa-solid fa-chevron-right text-base desktop:text-4xl"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- BiG Fair Human -->
+    <section class="w-full h-fit flex flex-col items-center desktop:flex-row">
+      <div
+        class="w-full desktop:w-1/3 flex flex-col desktop:items-start desktop:px-10 desktop:pt-14 desktop:pb-20"
+      >
+        <hr
+          class="mt-10 mb-3 mx-auto w-10 h-1 bg-gray-100 border-0 dark:bg-red-600 desktop:w-20 desktop:mb-10 desktop:mx-0"
+        />
+        <div
+          class="flex flex-row justify-center text-4xl desktop:flex-col desktop:items-start desktop:text-7xl"
+        >
+          <span class="flex flex-row"
+            ><h2 class="text-gray-700"><b>Big</b></h2>
+            <h2 class="text-red-600">.</h2>
+          </span>
+          <span class="flex flex-row">
+            <h2 class="text-gray-700"><b>Fair</b></h2>
+            <h2 class="text-red-600">.</h2>
+          </span>
+          <span class="flex flex-row">
+            <h2 class="text-gray-700"><b>Human</b></h2>
+            <h2 class="text-red-600">.</h2>
+          </span>
+        </div>
+        <p class="text-center text-sm p-3 desktop:px-0 desktop:text-left">
+          Learn why <b>over 5 million clients choose XM</b> as their trusted
+          online brocker
+        </p>
+      </div>
+
+      <div
+        class="w-full flex flex-col items-center tablet:px-10 tablet:pt-8 tablet:pb-14 desktop:w-2/3 tablet:grid grid-cols-2"
+      >
+        <div class="bigdiv tablet:pr-10 tablet:border-r tablet:border-b">
+          <img class="w-16" src="../images/GroupDollar.png" alt="" />
+          <h3 class="big-human">Authorized and Regulated</h3>
+          <p>
+            At XM, we adhere to all regulatory standards and are fully
+            authorised and regulated by FSC
+          </p>
+        </div>
+        <div class="bigdiv tablet:pl-10 table:border-l tablet:border-b">
+          <img class="w-16" src="../images/FramePeople.png" alt="" />
+          <h3 class="big-human">Authorized and Regulated</h3>
+          <p>
+            At XM, we adhere to all regulatory standards and are fully
+            authorised and regulated by FSC
+          </p>
+        </div>
+        <div class="bigdiv tablet:pr-10 tablet:border-r tablet:border-t">
+          <img class="w-16" src="../images/Framecup.png" alt="" />
+          <h3 class="big-human">Authorized and Regulated</h3>
+          <p>
+            At XM, we adhere to all regulatory standards and are fully
+            authorised and regulated by FSC
+          </p>
+        </div>
+        <div class="bigdiv tablet:pl-10 tablet:border-l tablet:border-t">
+          <img class="w-16" src="../images/7.png" alt="" />
+          <h3 class="big-human">Authorized and Regulated</h3>
+          <p>
+            At XM, we adhere to all regulatory standards and are fully
+            authorised and regulated by FSC
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="w-full h-40 bg-black desktop:h-60 tablet:p-10 flex flex-col justify-center"
+    >
+      <div class="collapse desktop:visible flex flex-row">
+        <span class="w-4/5 flex flex-row justify-start object-scale-down">
+          <img class="pr-5 py-6 w-40" src="./images/MegaQuotes.png" alt="" />
+          <img
+            class="px-5 py-6 w-44"
+            src="./images/RectangleVerisign.png"
+            alt=""
+          />
+          <img
+            class="px-5 py-6 w-40"
+            src="./images/RectangleUnicef.png"
+            alt=""
+          />
+          <img
+            class="px-5 py-6 w-52"
+            src="./images/RectangleInvestors.png"
+            alt=""
+          />
+        </span>
+        <div class="w-1/5 flex flex-row justify-end items-center text-white">
+          <p class="text-white mr-1">Follow us On</p>
+          <i class="fa-brands fa-facebook-f m-1"></i>
+          <i class="fa-brands fa-twitter m-1"></i>
+          <i class="fa-brands fa-youtube m-1"></i>
+          <i class="fa-brands fa-instagram m-1"></i>
+          <i class="fa-brands fa-linkedin-in m-1"></i>
+        </div>
+      </div>
+
+      <hr class="collapse desktop:visible" />
+
+      <div
+        class="w-full h-36 bg-black flex flex-col justify-around tablet:flex-row items-center tablet:justify-between desktop:items-start"
+      >
+        <span
+          class="text-white flex flex-row desktop:mt-4 text-xs tablet:text-base"
+        >
+          <a href="#" class="pr-1 border-r-2 border-white">Privacy Police</a>
+          <a href="#" class="px-1 border-r-2 border-white">Cookie Police</a>
+          <a href="#" class="pl-1">Terms and Conditions</a>
+        </span>
+        <img
+          class="object-scale-down w-40 tablet:mr-9 desktop:mt-4"
+          src="./images/Rectangle.png"
+          alt="Trading Point Image"
+        />
+      </div>
+    </footer>
+  </body>
+  <script src="./src/app.js"></script>
+</html>
