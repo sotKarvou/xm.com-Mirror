@@ -337,12 +337,12 @@
           <input
             id="mail"
             type="email"
-            class="h-10 rounded-md border focus:border-solid-red-500"
+            class="h-10 rounded-md border-2"
             oninput="return validateEmail()"
           />
-          <div id="mail-validator" class="hidden">
+          <div id="mail-validator" class="hidden flex-row items-center text-xs tablet:text-sm text-red-500 pt-2">
             <i class="fa-solid fa-circle-dot text-xs"></i>
-            <p></p>
+            <p>Please Enter Valid Email</p>
           </div>
         </div>
         <div class="w-full flex flex-col space-y-1">

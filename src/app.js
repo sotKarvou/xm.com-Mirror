@@ -52,9 +52,16 @@ window.onload = () => {
 
 function validateEmail() {
   const email = document.getElementById("mail").value;
-  //   console.log(pw)
-  //   if (pw == "") {
-  //   }
+  var validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (email.match(validRegex)) {
+    document.getElementById("mail").classList.remove("border-red-500");
+    document.getElementById("mail").classList.add("border-green-500");
+  }else{
+    document.getElementById("mail-validator").classList.add("flex")
+    document.getElementById("mail-validator").classList.remove("hidden")
+  }
+  
 }
 
 const pw = document.getElementById("password");
@@ -71,7 +78,6 @@ function initializeValidation(x) {
     element.classList.remove("text-white");
     element.classList.add("text-red-500");
   });
-  // pw.classList.add("border border-red-500");
 }
 
 function validatePassword(x) {
