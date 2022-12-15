@@ -1,0 +1,10 @@
+Control panel username: 	b22_33205400
+Control panel password: 	**********
+Control panel URL: 	cpanel.byethost22.com
+MySQL username 	b22_33205400
+MySQL password: 	**********
+MySQL hostname: 	sql112.byethost22.com
+FTP username: 	b22_33205400
+FTP password: 	**********
+FTP host name: 	ftp.byethost22.com
+Your Website URL: 	http://xm-test.byethost22.com
